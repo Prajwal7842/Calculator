@@ -36,35 +36,35 @@ public class Calculator {
         Calculator calObject = new Calculator();
         Scanner scannerObject = new Scanner(System.in);
         while(true) {
-            System.out.println("Welcome to Calculator App.\nPress 1 to calculate Square Root of an integer\nPress 2 to calculate Factorial of an integer." +
-                    "\nPress 3 to calculate Natural log of a number.\nPress 4 to calculate X to the power Y.\nPress 5 to exit the application.");
-            int choice = scannerObject.nextInt();
-            if(choice == 1) {
-                double N = scannerObject.nextDouble();
-                double ans = calObject.sqrt(N);
-                System.out.println("Square Root of " + N + " = " + ans);
+            try {
+                System.out.println("Welcome to Calculator App.\nPress 1 to calculate Square Root of an integer\nPress 2 to calculate Factorial of an integer." +
+                        "\nPress 3 to calculate Natural log of a number.\nPress 4 to calculate X to the power Y.\nPress 5 to exit the application.");
+                int choice = scannerObject.nextInt();
+                if (choice == 1) {
+                    double N = scannerObject.nextDouble();
+                    double ans = calObject.sqrt(N);
+                    System.out.println("Square Root of " + N + " = " + ans);
+                } else if (choice == 2) {
+                    long N = scannerObject.nextLong();
+                    long ans = calObject.factorial(N);
+                    System.out.println("Factorial of " + N + " = " + ans);
+                } else if (choice == 3) {
+                    double N = scannerObject.nextDouble();
+                    double ans = calObject.log(N);
+                    System.out.println("Natural Log of " + N + " = " + ans);
+                } else if (choice == 4) {
+                    long X = scannerObject.nextInt();
+                    long Y = scannerObject.nextInt();
+                    long ans = calObject.power(X, Y);
+                    System.out.println(X + " to the power " + Y + " = " + ans);
+                } else if (choice == 5) {
+                    break;
+                } else {
+                    throw new IllegalArgumentException("Invalid Choice. Exiting!");
+                }
             }
-            else if(choice == 2) {
-                long N = scannerObject.nextLong();
-                long ans = calObject.factorial(N);
-                System.out.println("Factorial of " + N + " = " + ans);
-            }
-            else if(choice == 3) {
-                double N = scannerObject.nextDouble();
-                double ans = calObject.log(N);
-                System.out.println("Natural Log of " + N + " = " + ans);
-            }
-            else if(choice == 4) {
-                long X = scannerObject.nextInt();
-                long Y = scannerObject.nextInt();
-                long ans = calObject.power(X, Y);
-                System.out.println(X + " to the power " + Y + " = " + ans);
-            }
-            else if(choice == 5) {
-                break;
-            }
-            else {
-                throw new IllegalArgumentException("Invalid Choice. Exiting!");
+            catch (Exception e) {
+                System.exit(1);
             }
         }
     }
