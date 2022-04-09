@@ -1,0 +1,7 @@
+- name: Pull and Run docker image
+  hosts: ubuntu20
+  tasks:
+    - name: Pull prajwal7842/calculator_spe
+      docker_image:
+        name: prajwal7842/calculator_spe
+        source: pull

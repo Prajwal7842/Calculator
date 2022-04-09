@@ -1,0 +1,2 @@
+[ubuntu20]
+192.168.42.13 ansible_user=prajwal
