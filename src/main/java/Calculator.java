@@ -64,6 +64,7 @@ public class Calculator {
                 }
             }
             catch (Exception e) {
+                System.out.println("Invalid Choice!. Exiting.")
                 System.exit(1);
             }
         }
