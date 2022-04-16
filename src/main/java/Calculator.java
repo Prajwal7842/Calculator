@@ -1,35 +1,49 @@
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class.getName());
     public Calculator() {
 
     }
     public long factorial(long N) {
+        logger.info("[FACTORIAL] - " + N);
         if(N < 0) {
+            logger.info("[ERROR - FACTORIAL: Negative Integer Found] - " + N);
             throw new IllegalArgumentException("Invalid Input: Found Negative Number");
         }
         int fact = 1;
         for(int i = 2; i <= N; i ++) {
             fact = fact * i;
         }
+        logger.info("[RESULT - FACTORIAL] - " + fact);
         return fact;
     }
     public double sqrt(double N) {
+        logger.info("[SQRT] - " + N);
         if(N < 0) {
+            logger.info("[ERROR - SQRT: Negative Integer Found] - " + N);
             throw new IllegalArgumentException("Invalid Input: Found Negative Number");
         }
         double ans = Math.sqrt(N * 1.0);
+        logger.info("[RESULT - SQRT] - " + ans);
         return ans;
     }
     public long power(long X, long Y) {
+        logger.info("[POWER] - " + X + " " + Y);
         long ans = (long) Math.pow(X, Y);
+        logger.info("[RESULT - POWER] - " + ans);
         return ans;
     }
     public double log(double N) {
+        logger.info("[LOG] - " + N);
         if(N < 0) {
+            logger.info("[ERROR - LOG: Negative Number Found] - " + N);
             throw new IllegalArgumentException("Invalid Input: Found Negative Number");
         }
         double ans = Math.log(N);
+        logger.info("[RESULT - LOG] - " + ans);
         return ans;
     }
     public static void main(String args[]) {
