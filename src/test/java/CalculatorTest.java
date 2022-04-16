@@ -31,7 +31,7 @@ public class CalculatorTest {
     void log() {
         double inputN = 100.0, expectedOutput = 4.60517018599;
         assertEquals(expectedOutput, calObject.log(inputN), epsilon);
-        double inputN = 100.0, expectedOutput = 4.60517018599;
+        inputN = 100.0; expectedOutput = 4.60517018599;
         assertEquals(expectedOutput, calObject.log(inputN), epsilon);
     }
 }
