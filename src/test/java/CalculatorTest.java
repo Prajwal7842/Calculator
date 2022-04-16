@@ -13,6 +13,9 @@ public class CalculatorTest {
     void sqrt() {
         double inputN = 100.0, expectedOutput = 10.0;
         assertEquals(expectedOutput, calObject.sqrt(inputN), epsilon);
+
+        inputN = 16.0; expectedOutput = 4.0;
+        assertEquals(expectedOutput, calObject.sqrt(inputN), epsilon);
     }
 
     @org.junit.jupiter.api.Test
