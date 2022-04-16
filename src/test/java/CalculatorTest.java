@@ -22,6 +22,9 @@ public class CalculatorTest {
     void power() {
         long inputX = 5, inputY = 5, expectedOutput = 3125;
         assertEquals(expectedOutput, calObject.power(inputX, inputY), epsilon);
+
+        inputX = 5; inputY = 0; expectedOutput = 1;
+        assertEquals(expectedOutput, calObject.power(inputX, inputY), epsilon);
     }
 
     @org.junit.jupiter.api.Test
