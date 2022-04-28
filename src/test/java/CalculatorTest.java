@@ -39,4 +39,6 @@ public class CalculatorTest {
         inputN = 10.0;
         assertNotEquals(3.0, calObject.log(inputN), epsilon);
     }
+
+
 }
