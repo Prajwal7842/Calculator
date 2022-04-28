@@ -60,3 +60,11 @@
 2022-04-17 18:46:19.042 [main] INFO  Calculator - [RESULT - LOG] - 2.833213344056216
 2022-04-17 18:46:29.082 [main] INFO  Calculator - [POWER] - 10 4
 2022-04-17 18:46:29.082 [main] INFO  Calculator - [RESULT - POWER] - 10000
+2022-04-18 11:14:06.191 [main] INFO  Calculator - [SQRT] - 197.0
+2022-04-18 11:14:06.202 [main] INFO  Calculator - [RESULT - SQRT] - 14.035668847618199
+2022-04-18 11:14:14.130 [main] INFO  Calculator - [FACTORIAL] - 8
+2022-04-18 11:14:14.130 [main] INFO  Calculator - [RESULT - FACTORIAL] - 40320
+2022-04-18 11:14:21.236 [main] INFO  Calculator - [LOG] - 34.0
+2022-04-18 11:14:21.237 [main] INFO  Calculator - [RESULT - LOG] - 3.5263605246161616
+2022-04-18 11:14:38.709 [main] INFO  Calculator - [POWER] - 5 3
+2022-04-18 11:14:38.710 [main] INFO  Calculator - [RESULT - POWER] - 125
