@@ -36,6 +36,8 @@ public class CalculatorTest {
         double inputN = 100.0, expectedOutput = 4.60517018599;
         assertEquals(expectedOutput, calObject.log(inputN), epsilon);
         
+
+        
         inputN = 10.0;
         assertNotEquals(3.0, calObject.log(inputN), epsilon);
     }
